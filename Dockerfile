@@ -175,5 +175,6 @@ COPY --from=lualsp /build/lua-language-server /lsp
 RUN chown -R $UID:$GID /lsp
 # ENTRYPOINT ["/lsp/bin/lua-language-server", "/lsp/main.lua"]
 
+# Entrypoint stuff
 USER $USER_NAME
 ENTRYPOINT ["/usr/local/bin/nvim"]
