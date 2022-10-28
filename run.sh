@@ -21,7 +21,7 @@ docker run \
     --rm -it -v /var/run/docker.sock:/var/run/docker.sock \
     -e USER=$USER \
     -e XDG_CONFIG_HOME=$HOME/.config \
-    -e HOST_PATH=$PATH \
+    -e PATH=$PATH \
     -v $HOME:$HOME \
     -w $PWD \
     --expose=4200 \
